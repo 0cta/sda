@@ -5,10 +5,13 @@ import javax.servlet.annotation.WebServlet;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.annotations.Widgetset;
+import com.vaadin.data.validator.EmailValidator;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.Button;
+import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Label;
+import com.vaadin.ui.PasswordField;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
@@ -27,17 +30,26 @@ public class MyUI extends UI {
     @Override
     protected void init(VaadinRequest vaadinRequest) {
         final VerticalLayout layout = new VerticalLayout();
+        final HorizontalLayout buttonLayout = new HorizontalLayout();
         
-        final TextField name = new TextField();
-        name.setCaption("Type your name here:");
+        final TextField email = new TextField();
+        email.setCaption("E-Mail:");
+        final PasswordField password = new PasswordField();
+        password.setCaption("Password");
 
-        Button button = new Button("Click Me");
-        button.addClickListener( e -> {
-            layout.addComponent(new Label("Thanks " + name.getValue() 
-                    + ", it works!"));
+        Button login = new Button("Login");
+        login.addClickListener( e -> {
+            layout.addComponent(new Label("Thanks "));
         });
         
-        layout.addComponents(name, button);
+        Button register = new Button("Register");
+        register.addClickListener( e -> {
+        	layout.addComponent(new Label("Thanks for sharing your password"));
+        });
+        
+        buttonLayout.addComponents(login, register);
+        
+        layout.addComponents(email, password, buttonLayout);
         layout.setMargin(true);
         layout.setSpacing(true);
         
