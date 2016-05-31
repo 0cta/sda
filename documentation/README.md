@@ -16,25 +16,27 @@ A button to finish the process. A redirect to the login page.
 ClickListener on the loginButton -> once clicked, the UserService::login(email, password) method is called and the login credentials are passed.
 * Backend: The UserService::login(email, passwordHASH) selects the user with the given email from the Database/JPA and compares their password (hash). In either case, we have to somehow inform the MyUI class, whether it succeeded or failed so the appropriate action can be taken (take user to the restricted area or show him an "invalid credentials" error)
 
-#### Session Handling
+### Session Handling
 * After the user logged in, his session should represent that state. Sessions are automatically created by Vaadin when a user hits the init() method, we just have to enhance it a bit.
 * We have to somehow secure the "restricted" areas of our webApp, so that one can't simply enter the *correct* URL and see all the DocBook Stuff....
 @TODO: Think about an authorization mechanism.
 
-### UI Classes
-#### Login Panel
+## UI Classes
+### Login Panel
 class myLogin extends UI ...
 filled with Login Functionality described in 1-1-1-2
-#### Register Panel
+### Register Panel
 class myRegister extends UI ...
 filled with Register Functionality described in 1-1-1-1
-#### Overview Panel (Lists all Documents)
+### Overview Panel (Lists all Documents)
 class myOverview extends UI ...
 Has to provide the following UI elements:
-A TableView
-#### Detailed View Panel (Lists all available information about one Document)
+A TableView with search functionality that lists a document instance's MetaData (author, ...)
+In addition, this table view shall be searchable by either the document's or the author's name.
+### Detailed View Panel (Lists all available information about one Document)
 class myDetails extends UI ...
-
+This view shall list all detailed information about a single document instance.
+This includes all MetaData about the Document and the author and several interaction mechanisms such as DELETE, DOWNLOAD (and CONVERT)
 
 ## Services
 ### UserService
