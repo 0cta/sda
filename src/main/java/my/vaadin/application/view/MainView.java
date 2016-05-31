@@ -33,7 +33,7 @@ public class MainView extends VerticalLayout implements View {
 		documents_table.setSizeFull();
 		
 		addComponents(layout_head, documents_table);
-		setComponentAlignment(documents_table, Alignment.MIDDLE_CENTER);
+		setComponentAlignment(documents_table, Alignment.TOP_CENTER);
 	}
 
 	@Override

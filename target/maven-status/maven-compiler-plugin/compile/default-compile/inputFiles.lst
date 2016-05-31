@@ -1,5 +1,7 @@
 /home/kevin/workspace/application/src/main/java/my/vaadin/application/NavigatorUI.java
 /home/kevin/workspace/application/src/main/java/my/vaadin/application/view/RegisterView.java
 /home/kevin/workspace/application/src/main/java/my/vaadin/application/view/MainView.java
+/home/kevin/workspace/application/src/main/java/my/vaadin/application/service/SessionService.java
+/home/kevin/workspace/application/src/main/java/my/vaadin/application/data/User.java
 /home/kevin/workspace/application/src/main/java/my/vaadin/application/data/Document.java
 /home/kevin/workspace/application/src/main/java/my/vaadin/application/view/LoginView.java
