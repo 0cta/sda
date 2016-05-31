@@ -13,6 +13,7 @@ import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
 import my.vaadin.application.view.LoginView;
+import my.vaadin.application.view.MainView;
 import my.vaadin.application.view.RegisterView;
 
 /**
@@ -41,9 +42,10 @@ public class NavigatorUI extends UI {
        
        nav = new Navigator(this, this);
        nav.addView("login", new LoginView(nav));
-       nav.addView("register", new RegisterView(nav));
+       nav.addView("register", new RegisterView(nav));	
+       nav.addView("main", new MainView(nav));
        
-       nav.navigateTo("login");
+       nav.navigateTo("main");
        
     }
 
