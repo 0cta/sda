@@ -7,12 +7,48 @@ public class Document {
 	@GeneratedValue
 	private Long id;
 	
-	@Size(min=1,max=255)
+	@NotNull
 	private String title;
 	
-	@Size(min=3,max=255)
+	@NotNull
 	private String author;
 	
-	@Size(min=1,max=255)
+	@NotNull
 	private String affiliation;
+	
+	@NotNull
+	@ManyToOne
+	private String owner;
+	
+	// ---- GETTER / SETTER ----
+	
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getAuthor() {
+		return author;
+	}
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+	public String getAffiliation() {
+		return affiliation;
+	}
+	public void setAffiliation(String affiliation) {
+		this.affiliation = affiliation;
+	}
+	public String getOwner() {
+		return owner;
+	}
+	public void setOwner(String owner) {
+		this.owner = owner;
+	}
+	public Long getId() {
+		return id;
+	}
+	
+	
 }
