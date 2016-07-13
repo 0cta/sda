@@ -3,6 +3,7 @@ package my.vaadin.application;
 import javax.servlet.annotation.WebServlet;
 
 import com.vaadin.annotations.Theme;
+import com.vaadin.annotations.Title;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.annotations.Widgetset;
 import com.vaadin.navigator.Navigator;
@@ -11,10 +12,10 @@ import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.UI;
 
-import application.view.MyLogin;
-import application.view.MyOverview;
-import application.view.MyRegister;
-import application.view.MyUpload;
+import my.vaadin.application.view.MyLogin;
+import my.vaadin.application.view.MyOverview;
+import my.vaadin.application.view.MyRegister;
+import my.vaadin.application.view.MyUpload;
 
 /**
  * This UI is the application entry point. A UI may either represent a browser window 
@@ -23,6 +24,7 @@ import application.view.MyUpload;
  * The UI is initialized using {@link #init(VaadinRequest)}. This method is intended to be 
  * overridden to add component to the user interface and initialize non-component functionality.
  */
+@Title("DMS 1.0 - DocBook Management System")
 @SuppressWarnings("serial")
 @Theme("mytheme")
 @Widgetset("my.vaadin.application.MyAppWidgetset")

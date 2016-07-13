@@ -1,7 +1,8 @@
-C:\Users\Kevin\workspace\application\src\main\java\application\data\Document.java
-C:\Users\Kevin\workspace\application\src\main\java\application\view\MyUpload.java
-C:\Users\Kevin\workspace\application\src\main\java\application\data\User.java
-C:\Users\Kevin\workspace\application\src\main\java\application\view\MyOverview.java
-C:\Users\Kevin\workspace\application\src\main\java\application\view\MyRegister.java
-C:\Users\Kevin\workspace\application\src\main\java\application\view\MyLogin.java
+C:\Users\Kevin\workspace\application\src\main\java\my\vaadin\application\view\MyRegister.java
+C:\Users\Kevin\workspace\application\src\main\java\my\vaadin\application\view\MyOverview.java
+C:\Users\Kevin\workspace\application\src\main\java\my\vaadin\application\logic\MyDomDriver.java
+C:\Users\Kevin\workspace\application\src\main\java\my\vaadin\application\data\User.java
+C:\Users\Kevin\workspace\application\src\main\java\my\vaadin\application\data\Document.java
 C:\Users\Kevin\workspace\application\src\main\java\my\vaadin\application\MyUI.java
+C:\Users\Kevin\workspace\application\src\main\java\my\vaadin\application\view\MyLogin.java
+C:\Users\Kevin\workspace\application\src\main\java\my\vaadin\application\view\MyUpload.java
